@@ -4,32 +4,38 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
 .hero-container{
     background-image: url('/assets/images/bg.jpg');
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1980px, 100vh);
+    /* background-size: max(1980px, 100vh); */
+    
 }
-
+/* For Background black Layer */
 .hero-container .box{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     opacity: 0.4;
     background-color: black;
+    padding: 0px 25px;
 }
 
 nav {
     max-width: 80%;
+    margin: 0 auto;
+    padding-top: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding-top: 25px;
     position: relative;
     z-index: 100;
 
@@ -45,4 +51,95 @@ nav {
     font-weight: 700;
     border-radius: 5px;
 }
+
+/* Hero Content Starts */
+
+.hero-content{
+    max-width: 80%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    z-index: 100;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.hero-content{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero-content p{
+    margin: 15px 0px;
+}
+
+.hero-text-content :first-child{
+    font-size: 2.5rem; 
+    font-weight: 900;
+}
+
+.hero-text-content :nth-child(2){
+    font-size: 1.5rem;
+}
+.hero-text-content :nth-child(3){
+    font-size: 1.2rem; 
+    font-weight: 800;
+}
+
+
+.content-button{
+    background-color: #C11119;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+input{
+    padding: 12px 10px;
+    width: 300px;
+    background-color: #201c15b8;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+} 
+input placeholder {
+
+    color: #fff;
+}
+/* Media Query's  */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
+
+
 
