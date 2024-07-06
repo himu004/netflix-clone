@@ -111,6 +111,11 @@ nav {
     font-size: 1.2rem;
 }
 
+input[type="email"]{
+    color: #C11119;
+}
+
+
 .hero-container input {
     padding: 13px 10px;
     width: 380px;
@@ -128,7 +133,42 @@ nav {
     background-color: rgb(78, 76, 76);
 }
 
-/* Media Query's  */
+/* **************************** */
+
+/* ****  Sections Starts ***** */
+
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: 0 auto;
+    color: #fff;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.secImg{
+    position: relative;
+}
+
+.secImg img {
+    width: 30vw;
+    position: relative;
+    z-index: 1;
+}
+
+.secImg video{
+    position: absolute;
+    top: 67px;
+    left: 59px;
+    width: 312px;
+}
+
+
+
+/**************! Media Query's !**************/
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -152,6 +192,7 @@ nav {
         background-color: black;
         padding: 0px 25px;
     }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -186,6 +227,28 @@ nav {
 
     .hero-input-content {
         margin: 20px 0px;
+    }
+
+    .first{
+        flex-direction: column;
+    }
+
+    .secImg{
+        position: relative;
+    }
+    
+    .secImg img {
+        width: 100%;
+        position: relative;
+        z-index: 5;
+    }
+
+    .secImg video{
+        position: absolute;
+        width: 160px;
+        top: 35px;
+        right: 0;
+        left: 35px;
     }
 }
 
