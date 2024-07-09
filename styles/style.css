@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -150,6 +152,15 @@ input[type="email"]{
     margin-bottom: 50px;
 }
 
+.first .text-content :first-child{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.first .text-content :nth-child(2){
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 .secImg{
     position: relative;
 }
@@ -179,13 +190,14 @@ input[type="email"]{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: #fff;
+    margin-bottom: 30px;
 }
 
 .faq-box{
     max-width: 85%;
     height: 75px;
     background-color: #2d2d2d;
-    margin: 30px auto;
+    margin: 15px auto;
     transition: all 0.2s ease-out;
    
 }
@@ -213,6 +225,41 @@ input[type="email"]{
 .faq-hero-text-content p{
     font-size: 1.25rem;
 }
+
+/******************? Footer !**********************/
+
+.ftr-content{
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+}
+
+.ftr-content > div{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+    color: #fff;
+
+}
+.ftr-content > div a{
+    color: #fff;
+}
+
+.ftr-content .ftr-btn{
+    width: 120px;
+    padding: 10px 5px;
+    margin: 10px 0;
+    border: 1px solid #6b6a6a;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
 
 
 
@@ -299,6 +346,59 @@ input[type="email"]{
         right: 0;
         left: 35px;
     }
+
+    .faq > p{
+        font-size: 1.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    
+    .faq-box p {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .faq-content{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 20px;
+        
+    }
+    
+    .faq-hero-text-content p{
+        font-size: 1rem;
+    }
+
+    .first .text-content :first-child{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .first .text-content :nth-child(2){
+        font-size: 1rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .ftr-content{
+        max-width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px;
+        justify-content: center;
+    }
+
+    .ftr-content .ftr-btn {
+        text-align: center;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
